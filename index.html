@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>3-Tier Demo</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+          <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="viewUsers.php">All Users</a></li>
+        </ul>
+        </nav>
+      <div class="content">
+        
+        <p>Welcome to our interactive demonstration of a modern 3-tier web application architecture. This site showcases how the presentation layer (frontend), application layer (backend), and data layer (database) work together seamlessly to deliver a dynamic web experiences. </p>
+        <p>Begin by trying to register using the following form</p>
+         <form id="reg_form" name="reg_form" method="post" action="register.php" onsubmit="return validate();">
+          <fieldset>
+            <legend>Participant Registration</legend>           
+            First Name: <input type="text" name="fname" id="fname" />
+            <span id="fname_err" class="error"></span>
+            <br /><br />
+            
+            Last Name: <input type="text" name="lname" id="lname" />
+            <span id="lname_err" class="error"></span>
+            <br /><br />
+
+            Email: <input type="email" name="email" id="email" />
+            <span id="email_err" class="error"></span>
+             <br /><br />
+
+            <input type="submit" value="Register" id="reg_btn"/>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
